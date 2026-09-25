@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+    "input": {
+      "depressao": true,
+      "somaticas": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "info",
+      "verdict": "degenerativa"
+    },
+    "originalInput": {
+      "depressao": true,
+      "somaticas": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+    "input": {
+      "abrupto": true,
+      "has": true,
+      "ateroscl": true,
+      "noturna": true
+    },
+    "expected": {
+      "score": 5,
+      "level": "mid"
+    },
+    "originalInput": {
+      "abrupto": true,
+      "has": true,
+      "ateroscl": true,
+      "noturna": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+    "input": {
+      "abrupto": true,
+      "degraus": true,
+      "has": true,
+      "avc": true,
+      "sintomas": true
+    },
+    "expected": {
+      "score": 8,
+      "level": "info",
+      "verdict": "vascular"
+    },
+    "originalInput": {
+      "abrupto": true,
+      "degraus": true,
+      "has": true,
+      "avc": true,
+      "sintomas": true
+    },
+    "expandedZeroOptions": []
+  }
+]

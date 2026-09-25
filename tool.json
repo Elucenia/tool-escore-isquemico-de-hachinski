@@ -1,0 +1,344 @@
+{
+  "tool": {
+    "id": "escore-isquemico-de-hachinski",
+    "title": "Escore isquêmico de Hachinski",
+    "short": "Demência vascular ou degenerativa",
+    "spec": [
+      "neurologia",
+      "geriatria",
+      "psiquiatria"
+    ],
+    "desc": "Escore isquêmico de Hachinski: ajuda a distinguir demência vascular (≥ 7 pontos) de demência degenerativa, como a doença de Alzheimer (≤ 4 pontos).",
+    "lead": "Soma achados clínicos de doença cerebrovascular para ajudar a separar demência vascular de demência degenerativa primária.",
+    "fields": [
+      [
+        "abrupto",
+        "Início abrupto",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "degraus",
+        "Deterioração em degraus",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "flutuante",
+        "Curso flutuante",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "noturna",
+        "Confusão noturna",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "personalidade",
+        "Preservação relativa da personalidade",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "depressao",
+        "Depressão",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "somaticas",
+        "Queixas somáticas",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "labilidade",
+        "Incontinência (labilidade) emocional",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "has",
+        "História de hipertensão",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "avc",
+        "História de AVC",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "ateroscl",
+        "Evidência de aterosclerose associada",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "sintomas",
+        "Sintomas neurológicos focais",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "sinais",
+        "Sinais neurológicos focais",
+        "chk",
+        {
+          "pts": 2
+        }
+      ]
+    ],
+    "score": {
+      "label": "Escore de Hachinski",
+      "unit": "de 18",
+      "bands": [
+        [
+          0,
+          "info",
+          "Sugere demência degenerativa primária (≤ 4 pontos)",
+          "Não exclui componente vascular associado: confira a neuroimagem."
+        ],
+        [
+          5,
+          "mid",
+          "Faixa intermediária (5 a 6 pontos): possível demência mista",
+          ""
+        ],
+        [
+          7,
+          "info",
+          "Sugere demência vascular (≥ 7 pontos)",
+          "Confirme com neuroimagem (infartos, doença de pequenos vasos)."
+        ]
+      ]
+    },
+    "formula": "<p>2 pontos: início abrupto, curso flutuante, história de AVC, sintomas focais, sinais focais. 1 ponto: deterioração em degraus, confusão noturna, preservação da personalidade, depressão, queixas somáticas, labilidade emocional, hipertensão, aterosclerose. Total: 0 a 18.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Interpretação"
+      ],
+      [
+        "≤ 4",
+        "Demência degenerativa (ex.: Alzheimer)"
+      ],
+      [
+        "5 a 6",
+        "Intermediário / demência mista"
+      ],
+      [
+        "≥ 7",
+        "Demência vascular"
+      ]
+    ],
+    "table_note": "Na metanálise com confirmação anatomopatológica (Moroney 1997), os cortes ≤ 4 e ≥ 7 separaram Alzheimer de demência vascular com sensibilidade e especificidade em torno de 89%, mas foram pouco úteis para a demência mista.",
+    "tips": [
+      "O escore foi criado antes da neuroimagem moderna: hoje é um complemento da ressonância, não um substituto.",
+      "Demência mista (Alzheimer + doença vascular) é comum em idosos e costuma cair na faixa intermediária ou até na vascular.",
+      "Início abrupto e sinais focais pesam 2 pontos cada: confirme-os com história detalhada de um informante.",
+      "Não use o escore para diagnosticar demência: ele só ajuda a classificar a etiologia de um quadro demencial já estabelecido."
+    ],
+    "sources": [
+      [
+        "Hachinski VC et al. Cerebral blood flow in dementia. Arch Neurol, 1975.",
+        "https://doi.org/10.1001/archneur.1975.00490510088009"
+      ],
+      [
+        "Moroney JT et al. Meta-analysis of the Hachinski Ischemic Score in pathologically verified dementias. Neurology, 1997.",
+        "https://doi.org/10.1212/WNL.49.4.1096"
+      ]
+    ],
+    "cases": [
+      [
+        "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        {
+          "depressao": true,
+          "somaticas": true
+        },
+        {
+          "score": 2,
+          "level": "info",
+          "verdict": "degenerativa"
+        }
+      ],
+      [
+        "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        {
+          "abrupto": true,
+          "has": true,
+          "ateroscl": true,
+          "noturna": true
+        },
+        {
+          "score": 5,
+          "level": "mid"
+        }
+      ],
+      [
+        "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        {
+          "abrupto": true,
+          "degraus": true,
+          "has": true,
+          "avc": true,
+          "sintomas": true
+        },
+        {
+          "score": 8,
+          "level": "info",
+          "verdict": "vascular"
+        }
+      ]
+    ],
+    "batch": "neuro-mente",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 18",
+      "label": "Escore de Hachinski",
+      "fields": [
+        [
+          "abrupto",
+          "chk",
+          2
+        ],
+        [
+          "degraus",
+          "chk",
+          1
+        ],
+        [
+          "flutuante",
+          "chk",
+          2
+        ],
+        [
+          "noturna",
+          "chk",
+          1
+        ],
+        [
+          "personalidade",
+          "chk",
+          1
+        ],
+        [
+          "depressao",
+          "chk",
+          1
+        ],
+        [
+          "somaticas",
+          "chk",
+          1
+        ],
+        [
+          "labilidade",
+          "chk",
+          1
+        ],
+        [
+          "has",
+          "chk",
+          1
+        ],
+        [
+          "avc",
+          "chk",
+          2
+        ],
+        [
+          "ateroscl",
+          "chk",
+          1
+        ],
+        [
+          "sintomas",
+          "chk",
+          2
+        ],
+        [
+          "sinais",
+          "chk",
+          2
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "info",
+          "Sugere demência degenerativa primária (≤ 4 pontos)",
+          "Não exclui componente vascular associado: confira a neuroimagem."
+        ],
+        [
+          5,
+          "mid",
+          "Faixa intermediária (5 a 6 pontos): possível demência mista",
+          ""
+        ],
+        [
+          7,
+          "info",
+          "Sugere demência vascular (≥ 7 pontos)",
+          "Confirme com neuroimagem (infartos, doença de pequenos vasos)."
+        ]
+      ]
+    },
+    "areaId": "neuro-mente",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/neuro-mente.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/neuro-mente.php",
+    "sha256": "3ce3a7987a3ec63938e5f21d8d24ec7f7f8880c1b54458ef7046807a89221cac",
+    "bytes": 102818
+  },
+  "clinicalValidation": "not-performed"
+}
