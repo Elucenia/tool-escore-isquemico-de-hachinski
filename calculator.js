@@ -1,11 +1,11 @@
-/* tool-escore-isquemico-de-hachinski · Elucenia · https://github.com/Elucenia/tool-escore-isquemico-de-hachinski
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-escore-isquemico-de-hachinski · ELUCENIA · https://github.com/Elucenia/tool-escore-isquemico-de-hachinski
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-isquemico-de-hachinski","title":"Escore isquêmico de Hachinski","fields":[["abrupto","Início abrupto","chk",{"pts":2}],["degraus","Deterioração em degraus","chk",{"pts":1}],["flutuante","Curso flutuante","chk",{"pts":2}],["noturna","Confusão noturna","chk",{"pts":1}],["personalidade","Preservação relativa da personalidade","chk",{"pts":1}],["depressao","Depressão","chk",{"pts":1}],["somaticas","Queixas somáticas","chk",{"pts":1}],["labilidade","Incontinência (labilidade) emocional","chk",{"pts":1}],["has","História de hipertensão","chk",{"pts":1}],["avc","História de AVC","chk",{"pts":2}],["ateroscl","Evidência de aterosclerose associada","chk",{"pts":1}],["sintomas","Sintomas neurológicos focais","chk",{"pts":2}],["sinais","Sinais neurológicos focais","chk",{"pts":2}]],"config":{"unit":"de 18","label":"Escore de Hachinski","fields":[["abrupto","chk",2],["degraus","chk",1],["flutuante","chk",2],["noturna","chk",1],["personalidade","chk",1],["depressao","chk",1],["somaticas","chk",1],["labilidade","chk",1],["has","chk",1],["avc","chk",2],["ateroscl","chk",1],["sintomas","chk",2],["sinais","chk",2]],"bands":[[0,"info","Sugere demência degenerativa primária (≤ 4 pontos)","Não exclui componente vascular associado: confira a neuroimagem."],[5,"mid","Faixa intermediária (5 a 6 pontos): possível demência mista",""],[7,"info","Sugere demência vascular (≥ 7 pontos)","Confirme com neuroimagem (infartos, doença de pequenos vasos)."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
