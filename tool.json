@@ -3,169 +3,95 @@
     "id": "escore-isquemico-de-hachinski",
     "title": "Escore isquêmico de Hachinski",
     "short": "Demência vascular ou degenerativa",
+    "desc": "Escore isquêmico de Hachinski: ajuda a distinguir demência vascular (≥ 7 pontos) de demência degenerativa, como a doença de Alzheimer (≤ 4 pontos).",
+    "lead": "Soma achados clínicos de doença cerebrovascular para ajudar a separar demência vascular de demência degenerativa primária.",
+    "kind": "Escore",
     "spec": [
       "neurologia",
       "geriatria",
       "psiquiatria"
     ],
-    "desc": "Escore isquêmico de Hachinski: ajuda a distinguir demência vascular (≥ 7 pontos) de demência degenerativa, como a doença de Alzheimer (≤ 4 pontos).",
-    "lead": "Soma achados clínicos de doença cerebrovascular para ajudar a separar demência vascular de demência degenerativa primária.",
     "fields": [
       [
         "abrupto",
         "Início abrupto",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "degraus",
         "Deterioração em degraus",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "flutuante",
         "Curso flutuante",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "noturna",
         "Confusão noturna",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "personalidade",
         "Preservação relativa da personalidade",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "depressao",
         "Depressão",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "somaticas",
         "Queixas somáticas",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "labilidade",
         "Incontinência (labilidade) emocional",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "has",
         "História de hipertensão",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "avc",
         "História de AVC",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "ateroscl",
         "Evidência de aterosclerose associada",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "sintomas",
         "Sintomas neurológicos focais",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "sinais",
         "Sinais neurológicos focais",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Escore de Hachinski",
-      "unit": "de 18",
-      "bands": [
-        [
-          0,
-          "info",
-          "Sugere demência degenerativa primária (≤ 4 pontos)",
-          "Não exclui componente vascular associado: confira a neuroimagem."
-        ],
-        [
-          5,
-          "mid",
-          "Faixa intermediária (5 a 6 pontos): possível demência mista",
-          ""
-        ],
-        [
-          7,
-          "info",
-          "Sugere demência vascular (≥ 7 pontos)",
-          "Confirme com neuroimagem (infartos, doença de pequenos vasos)."
-        ]
-      ]
-    },
     "formula": "<p>2 pontos: início abrupto, curso flutuante, história de AVC, sintomas focais, sinais focais. 1 ponto: deterioração em degraus, confusão noturna, preservação da personalidade, depressão, queixas somáticas, labilidade emocional, hipertensão, aterosclerose. Total: 0 a 18.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação"
-      ],
-      [
-        "≤ 4",
-        "Demência degenerativa (ex.: Alzheimer)"
-      ],
-      [
-        "5 a 6",
-        "Intermediário / demência mista"
-      ],
-      [
-        "≥ 7",
-        "Demência vascular"
-      ]
-    ],
-    "table_note": "Na metanálise com confirmação anatomopatológica (Moroney 1997), os cortes ≤ 4 e ≥ 7 separaram Alzheimer de demência vascular com sensibilidade e especificidade em torno de 89%, mas foram pouco úteis para a demência mista.",
-    "tips": [
-      "O escore foi criado antes da neuroimagem moderna: hoje é um complemento da ressonância, não um substituto.",
-      "Demência mista (Alzheimer + doença vascular) é comum em idosos e costuma cair na faixa intermediária ou até na vascular.",
-      "Início abrupto e sinais focais pesam 2 pontos cada: confirme-os com história detalhada de um informante.",
-      "Não use o escore para diagnosticar demência: ele só ajuda a classificar a etiologia de um quadro demencial já estabelecido."
-    ],
     "sources": [
       [
         "Hachinski VC et al. Cerebral blood flow in dementia. Arch Neurol, 1975.",
@@ -218,99 +144,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 18",
-      "label": "Escore de Hachinski",
-      "fields": [
-        [
-          "abrupto",
-          "chk",
-          2
-        ],
-        [
-          "degraus",
-          "chk",
-          1
-        ],
-        [
-          "flutuante",
-          "chk",
-          2
-        ],
-        [
-          "noturna",
-          "chk",
-          1
-        ],
-        [
-          "personalidade",
-          "chk",
-          1
-        ],
-        [
-          "depressao",
-          "chk",
-          1
-        ],
-        [
-          "somaticas",
-          "chk",
-          1
-        ],
-        [
-          "labilidade",
-          "chk",
-          1
-        ],
-        [
-          "has",
-          "chk",
-          1
-        ],
-        [
-          "avc",
-          "chk",
-          2
-        ],
-        [
-          "ateroscl",
-          "chk",
-          1
-        ],
-        [
-          "sintomas",
-          "chk",
-          2
-        ],
-        [
-          "sinais",
-          "chk",
-          2
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "info",
-          "Sugere demência degenerativa primária (≤ 4 pontos)",
-          "Não exclui componente vascular associado: confira a neuroimagem."
-        ],
-        [
-          5,
-          "mid",
-          "Faixa intermediária (5 a 6 pontos): possível demência mista",
-          ""
-        ],
-        [
-          7,
-          "info",
-          "Sugere demência vascular (≥ 7 pontos)",
-          "Confirme com neuroimagem (infartos, doença de pequenos vasos)."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -319,17 +152,502 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:02:44.014Z",
+      "total": 8192,
+      "passed": 8192,
+      "sourceRowCount": 8192,
+      "uniqueApiInputCount": 8192,
+      "sourceContextCount": 8192,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "c56eeebef40d2df778eb1e8054b9b6929a764df491f811a3db012846f37ed01f",
+        "total": 8192,
+        "bankRowCount": 8192,
+        "uniqueApiInputCount": 8192,
+        "sourceContextCount": 8192,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+            "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+          },
+          {
+            "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+            "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+          "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+        },
+        "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 8192,
+        "uniqueApiInputs": 8192,
+        "duplicateRows": 0,
+        "expectedTupleSha256": "605df39841a67c7c101c5136e57550ad04b4556dff00ce3162941765835c5916"
+      },
+      "scope": "Previously selected source integer point total only: Exhaustive2^13=8192 selected-code combinations; numericpointsum only.",
+      "sources": [
+        {
+          "id": "escore-isquemico-de-hachinski",
+          "edition": "Original13-item Hachinski1975 point column reproduced in Fischer1991 Table1; excludes reduced Rosen1980",
+          "primaryReads": [
+            {
+              "url": "https://jamanetwork.com/journals/jamaneurology/article-abstract/573931",
+              "access": "Original1975 publisher abstract/identity read, full original table not obtained",
+              "readScope": "24 patient cerebral blood-flow study and original citation only"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1014425/",
+              "access": "Fischer/Jellinger/Gatterer/Danielczyk1991 original prospective neuropathological study in officialPMC; printedp580 visually read directly",
+              "artifact": "six-screening-primary-final28/hachinski-fischer1991-p580.png",
+              "sha256": "2dca2a2e6507698bd2e3fa209fe3a095c3debd3be8e85e655e07dc8f01f36636",
+              "readScope": "Table1 original1975 thirteen-item weights and alternateRosen/Loeb/Kawas/Fischer columns; introduction/method excerpt, not entire4-page article"
+            },
+            {
+              "url": "https://files.alz.washington.edu/documentation/uds2-fvp-b2.pdf",
+              "access": "Official NACC UDSv2 February2008 FormB2 firstpage read",
+              "artifact": "six-screening-primary-final28/hachinski-nacc-v2.pdf",
+              "sha256": "530e4f8163bf6ed629a3a77a652db729082f63bc3b2895ac9d1214b45b75f9d3",
+              "readScope": "Rosen8-item modification, maximum12, explicitly distinct from current13-item method; not numeric oracle for current method"
+            }
+          ],
+          "constants": {
+            "keys": [
+              "abrupto",
+              "degraus",
+              "flutuante",
+              "noturna",
+              "personalidade",
+              "depressao",
+              "somaticas",
+              "labilidade",
+              "has",
+              "avc",
+              "ateroscl",
+              "sintomas",
+              "sinais"
+            ],
+            "weights": [
+              2,
+              1,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              1,
+              2,
+              2
+            ],
+            "maximum": 18
+          },
+          "limitations": [
+            "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+            "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+            "Original1975 full table not read; primary1991 validation explicitly reproduces original1975 column. Original clinicalcut≤4/≥7, neuropathological performance/mixed dementia and differential diagnosis remain outside sum proof. NACC document is reducedRosen variant and was explicitly not substituted."
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+      "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+          "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+        },
+        "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+      },
+      "freshAdapterExecutions": 24576,
+      "freshVmExecutions": 24576,
+      "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 8192×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
+          "app": "website",
+          "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
+          "app": "dashboard",
+          "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
+          "app": "command-center",
+          "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+        }
+      ],
+      "qualifications": [
+        "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+        "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+        "Original1975 full table not read; primary1991 validation explicitly reproduces original1975 column. Original clinicalcut≤4/≥7, neuropathological performance/mixed dementia and differential diagnosis remain outside sum proof. NACC document is reducedRosen variant and was explicitly not substituted.",
+        "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+        "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+        "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+        "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+        "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Hachinski 1975:13 fatores, total 0–18; sem variante reduzida Rosen",
+    "implementationVersion": "escore-isquemico-de-hachinski@native-2026-10-03+f90d3639d9ee",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1164215/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "2 pontos: início abrupto, curso flutuante, história de AVC, sintomas focais, sinais focais. 1 ponto: deterioração em degraus, confusão noturna, preservação da personalidade, depressão, queixas somáticas, labilidade emocional, hipertensão, aterosclerose. Total: 0 a 18.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "abrupto",
+            "label": "Início abrupto",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "degraus",
+            "label": "Deterioração em degraus",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "flutuante",
+            "label": "Curso flutuante",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "noturna",
+            "label": "Confusão noturna",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "personalidade",
+            "label": "Preservação relativa da personalidade",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "depressao",
+            "label": "Depressão",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "somaticas",
+            "label": "Queixas somáticas",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "labilidade",
+            "label": "Incontinência (labilidade) emocional",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "has",
+            "label": "História de hipertensão",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "avc",
+            "label": "História de AVC",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ateroscl",
+            "label": "Evidência de aterosclerose associada",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sintomas",
+            "label": "Sintomas neurológicos focais",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sinais",
+            "label": "Sinais neurológicos focais",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "17a25a625c8b939dc11aacbbf44ac5e28d6670a3dd9bc6fa38941b1a5d9f7897"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Hachinski VC et al. Cerebral blood flow in dementia. Arch Neurol, 1975.",
+          "url": "https://doi.org/10.1001/archneur.1975.00490510088009",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Cerebral blood flow in dementia.",
+            "year": "1975",
+            "firstPublicationDate": "1975-09-01",
+            "doi": "10.1001/archneur.1975.00490510088009",
+            "pmid": "1164215",
+            "journal": "Archives of neurology",
+            "authors": "Hachinski VC, Iliff LD, Zilhka E, Du Boulay GH, McAllister VL, Marshall J, Russell RW, Symon L."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/1164215/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "19e77db04c39b5bfa6b3edafc618a62d7aae874b3909c6e3850da523bdece73d",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Moroney JT et al. Meta-analysis of the Hachinski Ischemic Score in pathologically verified dementias. Neurology, 1997.",
+          "url": "https://doi.org/10.1212/WNL.49.4.1096",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Meta-analysis of the Hachinski Ischemic Score in pathologically verified dementias.",
+            "year": "1997",
+            "firstPublicationDate": "1997-10-01",
+            "doi": "10.1212/wnl.49.4.1096",
+            "pmid": "9339696",
+            "journal": "Neurology",
+            "authors": "Moroney JT, Bagiella E, Desmond DW, Hachinski VC, Mölsä PK, Gustafson L, Brun A, Fischer P, Erkinjuntti T, Rosen W, Paik MC, Tatemichi TK."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/9339696/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "5101b98b86ecb54f2e2eb75f5fa24fbd6e7c0531b2c45f720a4e461a14dd3fbc",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:02:44.014Z",
+        "total": 8192,
+        "passed": 8192,
+        "sourceRowCount": 8192,
+        "uniqueApiInputCount": 8192,
+        "sourceContextCount": 8192,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "c56eeebef40d2df778eb1e8054b9b6929a764df491f811a3db012846f37ed01f",
+          "total": 8192,
+          "bankRowCount": 8192,
+          "uniqueApiInputCount": 8192,
+          "sourceContextCount": 8192,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+              "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+            },
+            {
+              "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+              "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+            "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+          },
+          "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 8192,
+          "uniqueApiInputs": 8192,
+          "duplicateRows": 0,
+          "expectedTupleSha256": "605df39841a67c7c101c5136e57550ad04b4556dff00ce3162941765835c5916"
+        },
+        "scope": "Previously selected source integer point total only: Exhaustive2^13=8192 selected-code combinations; numericpointsum only.",
+        "sources": [
+          {
+            "id": "escore-isquemico-de-hachinski",
+            "edition": "Original13-item Hachinski1975 point column reproduced in Fischer1991 Table1; excludes reduced Rosen1980",
+            "primaryReads": [
+              {
+                "url": "https://jamanetwork.com/journals/jamaneurology/article-abstract/573931",
+                "access": "Original1975 publisher abstract/identity read, full original table not obtained",
+                "readScope": "24 patient cerebral blood-flow study and original citation only"
+              },
+              {
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1014425/",
+                "access": "Fischer/Jellinger/Gatterer/Danielczyk1991 original prospective neuropathological study in officialPMC; printedp580 visually read directly",
+                "artifact": "six-screening-primary-final28/hachinski-fischer1991-p580.png",
+                "sha256": "2dca2a2e6507698bd2e3fa209fe3a095c3debd3be8e85e655e07dc8f01f36636",
+                "readScope": "Table1 original1975 thirteen-item weights and alternateRosen/Loeb/Kawas/Fischer columns; introduction/method excerpt, not entire4-page article"
+              },
+              {
+                "url": "https://files.alz.washington.edu/documentation/uds2-fvp-b2.pdf",
+                "access": "Official NACC UDSv2 February2008 FormB2 firstpage read",
+                "artifact": "six-screening-primary-final28/hachinski-nacc-v2.pdf",
+                "sha256": "530e4f8163bf6ed629a3a77a652db729082f63bc3b2895ac9d1214b45b75f9d3",
+                "readScope": "Rosen8-item modification, maximum12, explicitly distinct from current13-item method; not numeric oracle for current method"
+              }
+            ],
+            "constants": {
+              "keys": [
+                "abrupto",
+                "degraus",
+                "flutuante",
+                "noturna",
+                "personalidade",
+                "depressao",
+                "somaticas",
+                "labilidade",
+                "has",
+                "avc",
+                "ateroscl",
+                "sintomas",
+                "sinais"
+              ],
+              "weights": [
+                2,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                1,
+                2,
+                2
+              ],
+              "maximum": 18
+            },
+            "limitations": [
+              "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+              "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+              "Original1975 full table not read; primary1991 validation explicitly reproduces original1975 column. Original clinicalcut≤4/≥7, neuropathological performance/mixed dementia and differential diagnosis remain outside sum proof. NACC document is reducedRosen variant and was explicitly not substituted."
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+        "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+            "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+          },
+          "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+        },
+        "freshAdapterExecutions": 24576,
+        "freshVmExecutions": 24576,
+        "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 8192×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
+            "app": "website",
+            "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
+            "app": "dashboard",
+            "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
+            "app": "command-center",
+            "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+          }
+        ],
+        "qualifications": [
+          "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+          "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+          "Original1975 full table not read; primary1991 validation explicitly reproduces original1975 column. Original clinicalcut≤4/≥7, neuropathological performance/mixed dementia and differential diagnosis remain outside sum proof. NACC document is reducedRosen variant and was explicitly not substituted.",
+          "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+          "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+          "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+          "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+          "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+    },
+    "limits": "Apoio à diferenciação entre demência degenerativa e por múltiplos infartos. O desempenho foi inferior na demência mista. Uma pontuação não substitui avaliação etiológica; os cortes publicados pertencem às populações e variantes estudadas.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.942Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Todos os pesos da variante original e procedimentos de diagnóstico diferencial não foram conferidos em artigo integral."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
+    "bytes": 5458,
+    "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5d504190fa9e2bff96d0841c46eff5b12bac2545dc760661fa04d432f31e0e42",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "f4a8c4093345e5e37a9ad099e4119862a39dd3b0c1d8bb00ff7a394ba65e5604",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "f4a8c4093345e5e37a9ad099e4119862a39dd3b0c1d8bb00ff7a394ba65e5604",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

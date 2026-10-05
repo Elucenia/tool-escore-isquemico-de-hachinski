@@ -1,62 +1,150 @@
 [
   {
-    "label": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
-    "input": {
+    "id": "escore-isquemico-de-hachinski",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+    "originalInput": {
       "depressao": true,
       "somaticas": true
+    },
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
     },
     "expected": {
       "score": 2,
       "level": "info",
       "verdict": "degenerativa"
     },
-    "originalInput": {
-      "depressao": true,
-      "somaticas": true
+    "recordedResult": {
+      "main": [
+        "2",
+        "de 18"
+      ],
+      "label": "Escore de Hachinski",
+      "raw": {
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
-    "input": {
+    "id": "escore-isquemico-de-hachinski",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+    "originalInput": {
       "abrupto": true,
       "has": true,
       "ateroscl": true,
       "noturna": true
+    },
+    "input": {
+      "abrupto": true,
+      "has": true,
+      "ateroscl": true,
+      "noturna": true,
+      "degraus": false,
+      "flutuante": false,
+      "personalidade": false,
+      "depressao": false,
+      "somaticas": false,
+      "labilidade": false,
+      "avc": false,
+      "sintomas": false,
+      "sinais": false
     },
     "expected": {
       "score": 5,
       "level": "mid"
     },
-    "originalInput": {
-      "abrupto": true,
-      "has": true,
-      "ateroscl": true,
-      "noturna": true
+    "recordedResult": {
+      "main": [
+        "5",
+        "de 18"
+      ],
+      "label": "Escore de Hachinski",
+      "raw": {
+        "score": 5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
-    "input": {
+    "id": "escore-isquemico-de-hachinski",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+    "originalInput": {
       "abrupto": true,
       "degraus": true,
       "has": true,
       "avc": true,
       "sintomas": true
+    },
+    "input": {
+      "abrupto": true,
+      "degraus": true,
+      "has": true,
+      "avc": true,
+      "sintomas": true,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "depressao": false,
+      "somaticas": false,
+      "labilidade": false,
+      "ateroscl": false,
+      "sinais": false
     },
     "expected": {
       "score": 8,
       "level": "info",
       "verdict": "vascular"
     },
-    "originalInput": {
-      "abrupto": true,
-      "degraus": true,
-      "has": true,
-      "avc": true,
-      "sintomas": true
+    "recordedResult": {
+      "main": [
+        "8",
+        "de 18"
+      ],
+      "label": "Escore de Hachinski",
+      "raw": {
+        "score": 8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

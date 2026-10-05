@@ -1,0 +1,337 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean abrupto",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": "2",
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "abrupto"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean degraus",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": "2",
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "degraus"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean flutuante",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": "2",
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "flutuante"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean noturna",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": "2",
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "noturna"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean personalidade",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": "2",
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "personalidade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean depressao",
+    "input": {
+      "depressao": "2",
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "depressao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean somaticas",
+    "input": {
+      "depressao": true,
+      "somaticas": "2",
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "somaticas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean labilidade",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": "2",
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "labilidade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean has",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": "2",
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean avc",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": "2",
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "avc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ateroscl",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": "2",
+      "sintomas": false,
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ateroscl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean sintomas",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": "2",
+      "sinais": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sintomas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean sinais",
+    "input": {
+      "depressao": true,
+      "somaticas": true,
+      "abrupto": false,
+      "degraus": false,
+      "flutuante": false,
+      "noturna": false,
+      "personalidade": false,
+      "labilidade": false,
+      "has": false,
+      "avc": false,
+      "ateroscl": false,
+      "sintomas": false,
+      "sinais": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sinais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

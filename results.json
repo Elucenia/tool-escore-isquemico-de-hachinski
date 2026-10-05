@@ -1,0 +1,300 @@
+{
+  "id": "escore-isquemico-de-hachinski",
+  "at": "2026-10-05T17:29:30.318Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
+    "bytes": 5458,
+    "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+  },
+  "cases": [
+    {
+      "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+      "input": {
+        "depressao": true,
+        "somaticas": true,
+        "abrupto": false,
+        "degraus": false,
+        "flutuante": false,
+        "noturna": false,
+        "personalidade": false,
+        "labilidade": false,
+        "has": false,
+        "avc": false,
+        "ateroscl": false,
+        "sintomas": false,
+        "sinais": false
+      },
+      "obtained": {
+        "id": "escore-isquemico-de-hachinski",
+        "main": [
+          "2",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2",
+          "obtained": "2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 18",
+          "obtained": "de 18",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+      "input": {
+        "abrupto": true,
+        "has": true,
+        "ateroscl": true,
+        "noturna": true,
+        "degraus": false,
+        "flutuante": false,
+        "personalidade": false,
+        "depressao": false,
+        "somaticas": false,
+        "labilidade": false,
+        "avc": false,
+        "sintomas": false,
+        "sinais": false
+      },
+      "obtained": {
+        "id": "escore-isquemico-de-hachinski",
+        "main": [
+          "5",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 5,
+          "obtained": 5,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 5,
+          "obtained": 5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "5",
+          "obtained": "5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 18",
+          "obtained": "de 18",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+      "input": {
+        "abrupto": true,
+        "degraus": true,
+        "has": true,
+        "avc": true,
+        "sintomas": true,
+        "flutuante": false,
+        "noturna": false,
+        "personalidade": false,
+        "depressao": false,
+        "somaticas": false,
+        "labilidade": false,
+        "ateroscl": false,
+        "sinais": false
+      },
+      "obtained": {
+        "id": "escore-isquemico-de-hachinski",
+        "main": [
+          "8",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "raw": {
+          "score": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 8,
+          "obtained": 8,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 8,
+          "obtained": 8,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "8",
+          "obtained": "8",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 18",
+          "obtained": "de 18",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 17,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
