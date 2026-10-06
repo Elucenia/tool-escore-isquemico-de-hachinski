@@ -105,3 +105,26 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Suggerisce demenza degenerativa primaria (≤ 4 punti)
+
+Non esclude una componente vascolare associata: verificare la neuroimmagine.
+
+
+### 2
+
+Intervallo intermedio (5 a 6 punti): possibile demenza mista
+
+
+### 3
+
+Suggerisce demenza vascolare (≥ 7 punti)
+
+Confermare con neuroimaging (infarti, malattia dei piccoli vasi).
+

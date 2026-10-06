@@ -1,0 +1,199 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-isquemico-de-hachinski",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "50c97a8cf079ff9e247e8aa8bc20ee9f40fbcf5c",
+    "oldEngineSha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982",
+    "currentEngineSha256": "2ca246e491ad2df8ccaf52e4351f6e7a749a681e9a82ae97cf80335e8fa49854"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+      "input": {
+        "depressao": true,
+        "somaticas": true,
+        "abrupto": false,
+        "degraus": false,
+        "flutuante": false,
+        "noturna": false,
+        "personalidade": false,
+        "labilidade": false,
+        "has": false,
+        "avc": false,
+        "ateroscl": false,
+        "sintomas": false,
+        "sinais": false
+      },
+      "publicOutput": {
+        "id": "escore-isquemico-de-hachinski",
+        "main": [
+          "2",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "info",
+        "verdict": "degenerativa"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "level": "info",
+        "verdict": "Sugere demência degenerativa primária (≤ 4 pontos)",
+        "note": "Não exclui componente vascular associado: confira a neuroimagem.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+      "input": {
+        "abrupto": true,
+        "has": true,
+        "ateroscl": true,
+        "noturna": true,
+        "degraus": false,
+        "flutuante": false,
+        "personalidade": false,
+        "depressao": false,
+        "somaticas": false,
+        "labilidade": false,
+        "avc": false,
+        "sintomas": false,
+        "sinais": false
+      },
+      "publicOutput": {
+        "id": "escore-isquemico-de-hachinski",
+        "main": [
+          "5",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "level": "mid",
+        "verdict": "Faixa intermediária (5 a 6 pontos): possível demência mista",
+        "note": "",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+      "input": {
+        "abrupto": true,
+        "degraus": true,
+        "has": true,
+        "avc": true,
+        "sintomas": true,
+        "flutuante": false,
+        "noturna": false,
+        "personalidade": false,
+        "depressao": false,
+        "somaticas": false,
+        "labilidade": false,
+        "ateroscl": false,
+        "sinais": false
+      },
+      "publicOutput": {
+        "id": "escore-isquemico-de-hachinski",
+        "main": [
+          "8",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "raw": {
+          "score": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 8,
+        "level": "info",
+        "verdict": "vascular"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "8",
+          "de 18"
+        ],
+        "label": "Escore de Hachinski",
+        "level": "info",
+        "verdict": "Sugere demência vascular (≥ 7 pontos)",
+        "note": "Confirme com neuroimagem (infartos, doença de pequenos vasos).",
+        "raw": {
+          "score": 8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

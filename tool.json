@@ -305,7 +305,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Hachinski 1975:13 fatores, total 0–18; sem variante reduzida Rosen",
-    "implementationVersion": "escore-isquemico-de-hachinski@native-2026-10-03+f90d3639d9ee",
+    "implementationVersion": "escore-isquemico-de-hachinski@native-2026-10-05+2ca246e491ad",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1164215/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -612,7 +612,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+      "implementationHash": "2ca246e491ad2df8ccaf52e4351f6e7a749a681e9a82ae97cf80335e8fa49854",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-isquemico-de-hachinski@native-2026-10-03+f90d3639d9ee",
+          "previousImplementationHash": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982",
+          "implementationHash": "2ca246e491ad2df8ccaf52e4351f6e7a749a681e9a82ae97cf80335e8fa49854",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "17a25a625c8b939dc11aacbbf44ac5e28d6670a3dd9bc6fa38941b1a5d9f7897",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Apoio à diferenciação entre demência degenerativa e por múltiplos infartos. O desempenho foi inferior na demência mista. Uma pontuação não substitui avaliação etiológica; os cortes publicados pertencem às populações e variantes estudadas.",
     "sourceLimitEvidence": {
@@ -631,20 +659,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-isquemico-de-hachinski/calculator.js",
-    "bytes": 5458,
-    "sha256": "f90d3639d9eea710ef44a20c5aa264ea6b210a407f645ee3e91b4d875cfe0982"
+    "bytes": 5663,
+    "sha256": "2ca246e491ad2df8ccaf52e4351f6e7a749a681e9a82ae97cf80335e8fa49854"
   },
-  "sourceToolSha256": "5d504190fa9e2bff96d0841c46eff5b12bac2545dc760661fa04d432f31e0e42",
+  "sourceToolSha256": "a20b7c034e031a74b6ad3eb85a9d3fc2f82aa93eb69464646db05a534830a135",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "f4a8c4093345e5e37a9ad099e4119862a39dd3b0c1d8bb00ff7a394ba65e5604",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "f4a8c4093345e5e37a9ad099e4119862a39dd3b0c1d8bb00ff7a394ba65e5604",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

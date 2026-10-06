@@ -1,0 +1,487 @@
+{
+  "id": "escore-isquemico-de-hachinski",
+  "implementationVersion": "escore-isquemico-de-hachinski@native-2026-10-05+2ca246e491ad",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sugere demência degenerativa primária (≤ 4 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Não exclui componente vascular associado: confira a neuroimagem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faixa intermediária (5 a 6 pontos): possível demência mista",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sugere demência vascular (≥ 7 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Confirme com neuroimagem (infartos, doença de pequenos vasos).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Suggests primary degenerative dementia (≤ 4 points)",
+            "locale": "en",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "Does not exclude an associated vascular component: check neuroimaging.",
+            "locale": "en",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate range (5 to 6 points): possible mixed dementia",
+            "locale": "en",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Suggests vascular dementia (≥ 7 points)",
+            "locale": "en",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "Confirm with neuroimaging (infarcts, small vessel disease).",
+            "locale": "en",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sugiere demencia degenerativa primaria (≤ 4 puntos)",
+            "locale": "es",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "No excluye un componente vascular asociado: verifique la neuroimagen.",
+            "locale": "es",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rango intermedio (5 a 6 puntos): posible demencia mixta",
+            "locale": "es",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sugiere demencia vascular (≥ 7 puntos)",
+            "locale": "es",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "Confirmar con neuroimagen (infartos, enfermedad de pequeños vasos).",
+            "locale": "es",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Évoque une démence dégénérative primaire (≤ 4 points)",
+            "locale": "fr",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "N'exclut pas un composant vasculaire associé : vérifier la neuroimagerie.",
+            "locale": "fr",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Zone intermédiaire (5 à 6 points) : démence mixte possible",
+            "locale": "fr",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Évoque une démence vasculaire (≥ 7 points)",
+            "locale": "fr",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "Confirmer par neuroimagerie (infarctus, maladie des petits vaisseaux).",
+            "locale": "fr",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Spricht für eine primär degenerative Demenz (≤ 4 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "Schließt einen begleitenden vaskulären Anteil nicht aus: Neurobildgebung prüfen.",
+            "locale": "de",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediärer Bereich (5 bis 6 Punkte): mögliche Mischdemenz",
+            "locale": "de",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Spricht für eine vaskuläre Demenz (≥ 7 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "Mit Neurobildgebung bestätigen (Infarkte, Erkrankung der kleinen Gefäße).",
+            "locale": "de",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Suggerisce demenza degenerativa primaria (≤ 4 punti)",
+            "locale": "it",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "Non esclude una componente vascolare associata: verificare la neuroimmagine.",
+            "locale": "it",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intervallo intermedio (5 a 6 punti): possibile demenza mista",
+            "locale": "it",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Suggerisce demenza vascolare (≥ 7 punti)",
+            "locale": "it",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "Confermare con neuroimaging (infarti, malattia dei piccoli vasi).",
+            "locale": "it",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "يوحي بخرف تنكسي أولي (≤ 4 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "لا يستبعد مكوّنًا وعائيًا مرافقًا: تحقّق من التصوير العصبي.",
+            "locale": "ar",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "المدى المتوسط (5 إلى 6 نقاط): خرف مختلط محتمل",
+            "locale": "ar",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "يوحي بخرف وعائي (≥ 7 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "تأكيد ذلك بالتصوير العصبي (احتشاءات، مرض الأوعية الصغيرة).",
+            "locale": "ar",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "提示原发性退行性痴呆（≤ 4分）",
+            "locale": "zh",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "不能排除相关的血管成分：请查看神经影像学。",
+            "locale": "zh",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中间范围（5至6分）：可能为混合性痴呆",
+            "locale": "zh",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "提示血管性痴呆（≥ 7分）",
+            "locale": "zh",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "通过神经影像学确认（梗死、小血管病变）。",
+            "locale": "zh",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "原発性変性認知症を示唆する（≤ 4点）",
+            "locale": "ja",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "関連する血管性要素を除外しない：神経画像を確認する。",
+            "locale": "ja",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中間域（5～6点）：混合型認知症の可能性",
+            "locale": "ja",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "血管性認知症を示唆する（≥ 7点）",
+            "locale": "ja",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "神経画像で確認する（梗塞、小血管疾患）。",
+            "locale": "ja",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Depressão e queixas somáticas: 2 pontos (degenerativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "प्राथमिक अपक्षयी डिमेंशिया का सुझाव देता है (≤ 4 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-fd9da0dbb9b1c3699c8f"
+          },
+          "note": {
+            "text": "संबद्ध संवहनी घटक को खारिज नहीं करता: न्यूरोइमेजिंग जाँचें।",
+            "locale": "hi",
+            "template": "documented-authored-18f5852098b5e6d3658a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Início abrupto, hipertensão, aterosclerose e confusão noturna: 5 (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यवर्ती श्रेणी (5 से 6 अंक): मिश्रित डिमेंशिया की संभावना",
+            "locale": "hi",
+            "template": "documented-authored-5e1b626f97900c826dcc"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Início abrupto, degraus, hipertensão, AVC prévio e sintomas focais: 8 (vascular)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "वैस्कुलर डिमेंशिया का सुझाव देता है (≥ 7 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-3b8afdaa19d30c563a91"
+          },
+          "note": {
+            "text": "न्यूरोइमेजिंग (इन्फार्क्ट, छोटी रक्तवाहिका रोग) से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-2ca654631cef2fd660fc"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

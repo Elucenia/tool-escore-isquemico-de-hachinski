@@ -105,3 +105,26 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Spricht für eine primär degenerative Demenz (≤ 4 Punkte)
+
+Schließt einen begleitenden vaskulären Anteil nicht aus: Neurobildgebung prüfen.
+
+
+### 2
+
+Intermediärer Bereich (5 bis 6 Punkte): mögliche Mischdemenz
+
+
+### 3
+
+Spricht für eine vaskuläre Demenz (≥ 7 Punkte)
+
+Mit Neurobildgebung bestätigen (Infarkte, Erkrankung der kleinen Gefäße).
+

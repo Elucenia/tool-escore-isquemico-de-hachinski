@@ -105,3 +105,26 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Évoque une démence dégénérative primaire (≤ 4 points)
+
+N'exclut pas un composant vasculaire associé : vérifier la neuroimagerie.
+
+
+### 2
+
+Zone intermédiaire (5 à 6 points) : démence mixte possible
+
+
+### 3
+
+Évoque une démence vasculaire (≥ 7 points)
+
+Confirmer par neuroimagerie (infarctus, maladie des petits vaisseaux).
+
